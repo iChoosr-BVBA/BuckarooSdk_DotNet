@@ -1,4 +1,5 @@
 ﻿using BuckarooSdk.Services.AmericanExpress.TransactionRequest;
+using BuckarooSdk.Services.BanContact.TransactionRequest;
 using BuckarooSdk.Services.Ideal.TransactionRequest;
 using BuckarooSdk.Services.IdealProcessing.TransactionRequest;
 using BuckarooSdk.Services.Maestro;
@@ -117,6 +118,11 @@ namespace BuckarooSdk.Transaction
         public AmericanExpressTransaction AmericanExpress()
         {
             return new AmericanExpressTransaction(this);
+        }
+
+        public BanContactTransaction BanContact()
+        {
+            return new BanContactTransaction(this);
         }
 
         #endregion

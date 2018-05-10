@@ -242,6 +242,12 @@
     <Compile Include="Services\SimpleSepaDirectDebit\SimpleSepaDirectDebitRefundRequest.cs" />
     <Compile Include="Services\SimpleSepaDirectDebit\SimpleSepaDirectDebitRefundResponse.cs" />
     <Compile Include="Services\SimpleSepaDirectDebit\SimpleSepaDirectDebitTransaction.cs" />
+    <Compile Include="Services\Bancontact\Push\BancontactPayPush.cs" />
+    <Compile Include="Services\Bancontact\TransactionRequest\BanContactPayRequest.cs" />
+    <Compile Include="Services\Bancontact\TransactionRequest\BanContactPayResponse.cs" />
+    <Compile Include="Services\Bancontact\TransactionRequest\BanContactRefundRequest.cs" />
+    <Compile Include="Services\Bancontact\TransactionRequest\BanContactRefundResponse.cs" />
+    <Compile Include="Services\Bancontact\TransactionRequest\BanContactTransaction.cs" />
     <Compile Include="Services\Transfer\Push\TransferPayPush.cs" />
     <Compile Include="Services\Visa\Constants\Recurring.cs" />
     <Compile Include="Services\Visa\VisaAuthorizeRequest.cs" />
