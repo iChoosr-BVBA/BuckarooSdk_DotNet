@@ -38,7 +38,7 @@ namespace BuckarooSdk.Services.CreditManagement.DataRequest
 		{
 			var parameters = ServiceHelper.CreateServiceParameters(request);
 			var configuredServiceDataRequest = new ConfiguredServiceDataRequest(this.ConfiguredDataRequest.BaseDataRequest);
-			configuredServiceDataRequest.BaseData.AddService("CreditManagement3", parameters, "CreateCombinedInvoice");
+			configuredServiceDataRequest.BaseData.AddService("CreditManagement3", parameters, "CreateCreditNote");
 
 			return configuredServiceDataRequest;
 		}
