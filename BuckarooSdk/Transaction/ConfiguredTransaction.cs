@@ -9,6 +9,7 @@ using BuckarooSdk.Services.MasterCard;
 using BuckarooSdk.Services.Visa;
 using BuckarooSdk.Services.SimpleSepaDirectDebit;
 using BuckarooSdk.Services.Transfer.TransactionRequest;
+using BuckarooSdk.Services.VPay;
 
 namespace BuckarooSdk.Transaction
 {
@@ -123,6 +124,11 @@ namespace BuckarooSdk.Transaction
         public BanContactTransaction BanContact()
         {
             return new BanContactTransaction(this);
+        }
+
+        public VPayTransaction VPay()
+        {
+            return new VPayTransaction(this);
         }
 
         #endregion
