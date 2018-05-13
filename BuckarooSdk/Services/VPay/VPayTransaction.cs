@@ -1,4 +1,6 @@
-﻿namespace Buckaroo
+﻿using BuckarooSdk.Transaction;
+
+namespace BuckarooSdk.Services.VPay
 {
   public class VPayTransaction
   {

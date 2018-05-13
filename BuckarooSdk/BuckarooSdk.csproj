@@ -235,6 +235,8 @@
     <Compile Include="Services\Maestro\MaestroPayRemainderResponse.cs" />
     <Compile Include="Services\Maestro\MaestroPayRequest.cs" />
     <Compile Include="Services\Maestro\MaestroPayResponse.cs" />
+    <Compile Include="Services\Maestro\MaestroRefundRequest.cs" />
+    <Compile Include="Services\Maestro\MaestroRefundResponse.cs" />
     <Compile Include="Services\Maestro\MaestroTransaction.cs" />
     <Compile Include="Services\ParameterGroup.cs" />
     <Compile Include="Services\SimpleSepaDirectDebit\SimpleSepaDirectDebitPayRequest.cs" />
@@ -303,6 +305,11 @@
     <Compile Include="Services\Transfer\TransactionRequest\TransferRefundRequest.cs" />
     <Compile Include="Services\Transfer\TransactionRequest\TransferRefundResponse.cs" />
     <Compile Include="Services\Transfer\TransactionRequest\TransferTransaction.cs" />
+    <Compile Include="Services\VPay\VPayPayRequest.cs" />
+    <Compile Include="Services\VPay\VPayPayResponse.cs" />
+    <Compile Include="Services\VPay\VPayRefundRequest.cs" />
+    <Compile Include="Services\VPay\VPayRefundResponse.cs" />
+    <Compile Include="Services\VPay\VPayTransaction.cs" />
     <Compile Include="Transaction\Cancel\CancelTransaction.cs" />
     <Compile Include="Transaction\ConfiguredAdditionalTransaction.cs" />
     <Compile Include="Transaction\Cancel\ConfiguredCancelTransaction.cs" />
