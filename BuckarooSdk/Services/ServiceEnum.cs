@@ -14,6 +14,7 @@
 		Transfer,
 		SimpleSepaDirectDebit,
 		CreditManagement,
-        BanContact
+        BanContact,
+		VPay
     }
 }
