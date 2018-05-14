@@ -1,4 +1,5 @@
 ﻿using BuckarooSdk.Services.AmericanExpress.TransactionRequest;
+using BuckarooSdk.Services.BanContact.TransactionRequest;
 using BuckarooSdk.Services.Ideal.TransactionRequest;
 using BuckarooSdk.Services.IdealProcessing.TransactionRequest;
 using BuckarooSdk.Services.Maestro;
@@ -8,6 +9,7 @@ using BuckarooSdk.Services.MasterCard;
 using BuckarooSdk.Services.Visa;
 using BuckarooSdk.Services.SimpleSepaDirectDebit;
 using BuckarooSdk.Services.Transfer.TransactionRequest;
+using BuckarooSdk.Services.VPay;
 
 namespace BuckarooSdk.Transaction
 {
@@ -117,6 +119,16 @@ namespace BuckarooSdk.Transaction
         public AmericanExpressTransaction AmericanExpress()
         {
             return new AmericanExpressTransaction(this);
+        }
+
+        public BanContactTransaction BanContact()
+        {
+            return new BanContactTransaction(this);
+        }
+
+        public VPayTransaction VPay()
+        {
+            return new VPayTransaction(this);
         }
 
         #endregion
