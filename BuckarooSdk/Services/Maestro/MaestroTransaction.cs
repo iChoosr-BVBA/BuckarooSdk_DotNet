@@ -1,4 +1,5 @@
-﻿using BuckarooSdk.Transaction;
+﻿using BuckarooSdk.Services.Transfer.TransactionRequest;
+using BuckarooSdk.Transaction;
 
 namespace BuckarooSdk.Services.Maestro
 {
@@ -52,5 +53,13 @@ namespace BuckarooSdk.Services.Maestro
 
 			return configuredServiceTransaction;
 		}
-	}
+	    public ConfiguredServiceTransaction Refund(MaestroRefundRequest request)
+	    {
+	        var parameters = ServiceHelper.CreateServiceParameters(request);
+	        var configuredServiceTransaction = new ConfiguredServiceTransaction(ConfiguredTransaction.BaseTransaction);
+	        configuredServiceTransaction.BaseTransaction.AddService("Maestro", parameters, "refund");
+
+	        return configuredServiceTransaction;
+	    }
+    }
 }

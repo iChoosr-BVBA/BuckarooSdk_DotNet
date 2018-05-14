@@ -1,6 +1,6 @@
 ﻿namespace BuckarooSdk.Services.Maestro
 {
-    class MaestroRefundRequest
+    public class MaestroRefundRequest
     {
     }
 }
